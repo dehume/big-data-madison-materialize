@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "big-data-madison-materialize"
+version = "0.1.0"
+description = ""
+authors = ["Dennis Hume <dennis@materialize.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dbt-materialize = "1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

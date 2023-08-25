@@ -1,0 +1,6 @@
+sources:
+  - name: auction
+    schema: "{{ target.schema }}"
+    tables:
+      - name: auctions
+      - name: bids

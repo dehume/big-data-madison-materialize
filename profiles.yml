@@ -1,0 +1,15 @@
+big_data_madison:
+  outputs:
+    dev:
+      type: materialize
+      threads: 1
+      host: "{{ env_var('MZ_HOST_BD') }}"
+      port: 6875
+      user: "{{ env_var('MZ_USER_BD') }}"
+      pass: "{{ env_var('MZ_PASS_BD') }}"
+      database: dbt
+      schema: example
+      cluster: dbt
+      sslmode: require
+
+  target: dev

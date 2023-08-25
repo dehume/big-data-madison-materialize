@@ -1,0 +1,17 @@
+name: 'big_data_madison'
+version: '1.0.0'
+config-version: 2
+
+profile: 'big_data_madison'
+
+model-paths: ['models']
+
+target-path: 'target'
+clean-targets:
+  - 'target'
+  - 'dbt_modules'
+
+tests:
+  big_data_madison:
+    +store_failures: true
+    +schema: 'etl_failure'
